@@ -1,0 +1,122 @@
+@media only screen and (min-width:1350px) {
+     img.app-screen {
+        width: 35%;
+
+    }  
+}
+
+
+/* for laptop and big screens */
+@media only screen and (min-width:1200px) {
+    /* img.app-screen {
+        width: 25%;
+
+    }  */
+
+     .test {
+        width: 30%;
+    }
+}
+
+/* for tablet to big tablet */
+@media only screen and (min-width:991px) {
+    img.city-icon {
+        margin-left: 0;
+    }
+
+    ul.plan-feature,
+    ul.plan-feature img {
+        padding: 0;
+    }
+
+    ul.plan-feature img {
+        width: 20px;
+    }
+
+}
+
+/* for small mobile and small tablet */
+@media only screen and (max-width:798px) {
+    img.app-screen {
+        width: 100%;
+
+    }
+
+     .test {
+        width: 100%;
+    }
+
+    ul.plan-feature,
+    ul.plan-feature img {
+        padding: 0;
+    }
+
+    ul.plan-feature img {
+        margin-right: .5rem;
+        width       : 20px;
+    }
+
+    div {
+        padding      : 0;
+        margin-bottom: .5rem;
+    }
+}
+
+/* for small mobile only */
+@media only screen and (max-width:481px) {
+
+    .city-name,
+    h3 {
+        font-size: 4vw;
+    }
+
+    .f-img {
+        width: 4rem;
+    }
+
+    .f-para {
+        font-size: 3.5vw;
+        /* width : 4rem; */
+    }
+
+    .long-copy {
+        font-size: 3.5vw;
+    }
+
+    .works-para {
+        font-size: 4vw;
+    }
+
+    a.btn.btn-warning,
+    a.btn.btn-outline-warning {
+        /* width: 9vw; */
+        padding: 10px;
+    }
+
+    /*28 mar 2021 */
+    .btn-app img {
+        margin: 0;
+    }
+
+    ul.plan-feature,
+    ul.plan-feature img {
+        padding: 0;
+    }
+
+    ul.plan-feature img {
+        margin-right: .5rem;
+        width       : 20px;
+    }
+
+    div {
+        padding      : 0;
+        margin-bottom: .5rem;
+    }
+}
+
+/* bootstrap sizes
+
+576 - small screen
+798 - laptop
+992 - large
+1200 */
