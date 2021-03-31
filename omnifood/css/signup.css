@@ -1,0 +1,44 @@
+.section-plan {
+    background-color: #f4f4f4;
+}
+
+.plan-box {
+    border-radius: 15px;
+    width        : 90%;
+    margin-left  : 5%;
+    font-size    : large;
+    font-weight: bold;
+    color        : white;
+}
+
+.plan-price,
+.plan-price-meal {
+    text-align: center;
+    font-weight: bold;
+}
+
+.plan-price {
+    font-size: 2rem;
+}
+
+.plan-box div {
+    padding: 5%;
+}
+
+.plan-box div a {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+
+}
+
+.plan-box .btn {
+    padding         : 1rem 2rem;
+    font-size       : 1.2rem;
+    font-weight     : 600;
+    border-radius   : 50px;
+}
+
+.plan-feature img{
+    margin-right: 1rem;
+}
