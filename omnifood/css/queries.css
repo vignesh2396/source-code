@@ -61,7 +61,8 @@
         padding      : 0;
         margin-bottom: .5rem;
     }
-    
+}
+
 /* custom size */
 @media only screen and (max-width:768px) {
 .left{
@@ -75,8 +76,6 @@
     }
 }
     
-}
-
 /* for small mobile only */
 @media only screen and (max-width:481px) {
 
