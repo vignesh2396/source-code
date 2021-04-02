@@ -61,8 +61,20 @@
         padding      : 0;
         margin-bottom: .5rem;
     }
-
-
+    
+/* custom size */
+@media only screen and (max-width:768px) {
+.left{
+    display: none;
+}
+    .right{
+        display: block;
+    }
+    .contact-box{
+        display: block;
+    }
+}
+    
 }
 
 /* for small mobile only */
