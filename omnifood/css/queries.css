@@ -1,8 +1,8 @@
 @media only screen and (min-width:1350px) {
-     img.app-screen {
+    img.app-screen {
         width: 35%;
 
-    }  
+    }
 }
 
 
@@ -13,9 +13,10 @@
 
     }  */
 
-     .test {
+    .test {
         width: 30%;
     }
+
 }
 
 /* for tablet to big tablet */
@@ -42,7 +43,7 @@
 
     }
 
-     .test {
+    .test {
         width: 100%;
     }
 
@@ -60,6 +61,8 @@
         padding      : 0;
         margin-bottom: .5rem;
     }
+
+
 }
 
 /* for small mobile only */
@@ -112,11 +115,6 @@
         padding      : 0;
         margin-bottom: .5rem;
     }
+
+
 }
-
-/* bootstrap sizes
-
-576 - small screen
-798 - laptop
-992 - large
-1200 */

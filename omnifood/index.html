@@ -5,49 +5,43 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
+
   <!-- ============= Bootstrap css ============ -->
   <link href="./css/bootstrap/bootstrap.css" rel="stylesheet" type="text/css">
-  
+
   <!-- ============= Bootstrap js ============ -->
   <script src="./js/script.js"></script>
-  
+
   <!-- ============= Custom css ============ -->
   <link rel="stylesheet" type="text/css" href="./css/style.css">
-  
-  <!-- ============= fontawesome css ============ -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  
-  <!-- <link rel="stylesheet" href="./css/bootstrap/font-awesome.css" > -->
-  
+
   <!-- ============= Google font ============ -->
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,300italic">
   
-    <!-- ============= Title ============ -->
   <title>Omnifood - website </title>
 </head>
 
 <body>
   <!-- ============= Navigation start ============-->
-  <nav class="nav-tabs navbar navbar-expand-lg fixed-top bg-secondary">
+  <nav class="nav-tabs navbar navbar-expand-lg sticky-top bg-secondary float-right">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html"><img src="./img/logo-white.png" alt="logo" height="60" width="60"
           class="logo"></a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
         aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"><img src="./img/menu.svg" alt="X" width="50" height="40"
-            style="transform: translate(-2px);"></span>
+        <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
       </button>
-
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar me-auto mb-2 mb-lg-0">
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02" style="float:right;">
+        <ul class="nav justify-content-center me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="index.html#section-feature">Features</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="index.html#section-meals">Food</a>
+            <a class="nav-link" href="index.html#section-meals">Food</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#section-steps">App</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="index.html#section-cities">cities</a>
@@ -56,7 +50,7 @@
             <a class="nav-link" href="index.html#section-plan">Sign up</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="index.html#section-contactus">Contact us</a>
+            <a class="nav-link" aria-current="page" href="index.html#section-contact">Contact us</a>
           </li>
         </ul>
       </div>
@@ -71,18 +65,18 @@
     <div class="hero-text-box">
       <h1>Hello super healthy meals.</h1>
       <h2>Goodbye junk food.</h2>
-      <a class="btn btn-warning" href="#">I’m hungry</a>
-      <a class="btn btn-outline-warning" href="#">Show more</a>
+      
     </div>
 
   </header>
+
   <!-- ============= header end ============-->
 
   <!-- ============= features start ============-->
-
-  <section class="section-feature bg-dark" id="section-feature">
-    <div class="row ">
-      <h2>Get food fast &mdash; not fast food</h2>
+  <div id="section-feature"></div>
+  <section class="section-feature bg-dark" >
+    <div class="row">
+      <h2 class="mt-5">Get food fast &mdash; not fast food</h2>
       <p class="long-copy">Hello, we’re Omnifood, your new premium food delivery service. We know you’re always busy. No
         time for cooking. So let us take care of that, we’re really good at it, we promise!</p>
     </div>
@@ -120,14 +114,16 @@
         <p class="f-para">
           We don't limit your creativity, which means you can order whatever you feel like. You can also choose from our
           menu containing over 100 delicious meals. It's up to you!
+
         </p>
       </div>
     </div>
   </section>
   <!-- ============= features end ============-->
-
   <!-- ============= meals start ============-->
-  <section class="section-meals" id="section-meals">
+  <div id="section-meals"></div>
+  <section class="section-meals">
+    <h2 class="section-header mt-6">Pick your meal</h2>
     <ul class="meals-showcase">
       <li>
         <figure class="meal-photo">
@@ -180,7 +176,7 @@
 
   <section class="section-steps bg-dark" id="section-steps">
     <div class="row">
-      <h2>How it works &mdash; Simple as 1, 2, 3</h2>
+      <h2 class="mt-5">How it works &mdash; Simple as 1, 2, 3</h2>
     </div>
     <div class="row">
       <div class="col-md-6 col-sm-12 steps-box">
@@ -213,7 +209,8 @@
   <!-- ============= how its work end ============-->
 
   <!-- ============= cities start ============-->
-  <section class="section-cities bg-light">
+  <div id="section-cities"></div>
+  <section class="section-cities bg-light" >
     <div class="row">
       <h2 class="section-header">We're currently in these cities</h2>
     </div>
@@ -296,9 +293,10 @@
   <!-- ============= testimonials end ============-->
 
   <!-- ============= signup start ============-->
+  <div id="section-plan"></div>
   <section class="section-plan bg-dark">
     <div class="row">
-      <h2 id="section-plan">Start eating healthy today</h2>
+      <h2 class="mt-5">Start eating healthy today</h2>
     </div>
     <div class="row">
       <div class="col-md-4 col-sm-12">
@@ -384,102 +382,48 @@
   <!-- ============= signup end ============-->
 
   <!-- ============= contact us start ============-->
-  <section class="section-form">
-    <div class="row">
-      <h2 class="section-header">We're happy to hear from you</h2>
-    </div>
-    <div class="row">
-      <form action="#" method="post" class="contact-form">
-        <!-- 2 column grid layout with text inputs for the first and last names -->
-        <div class="row mb-4">
-          <div class="col">
-            <div class="form-outline">
-              <label class="form-label" for="form6Example1">First name</label>
-              <input type="text" id="form6Example1" class="form-control" />
-            </div>
-          </div>
-          <div class="col">
-            <div class="form-outline">
-              <label class="form-label" for="form6Example2">Last name</label>
-              <input type="text" id="form6Example2" class="form-control" />
-            </div>
-          </div>
-        </div>
-
-        <!-- Email input -->
-        <div class="form-outline mb-4">
-          <label class="form-label" for="form6Example5">Email</label>
-          <input type="email" id="form6Example5" class="form-control" />
-        </div>
-
-        <!-- Number input -->
-        <div class="form-outline mb-4">
-          <label class="form-label" for="form6Example6">Phone</label>
-          <input type="number" id="form6Example6" class="form-control" />
-        </div>
-
-        <!-- Text input -->
-        <div class="form-outline mb-4">
-          <label class="form-label" for="form6Example4">Address</label>
-          <textarea class="form-control" id="form6Example7" rows="4"></textarea>
-        </div>
-
-        <!-- Message input -->
-        <div class="form-outline mb-4">
-          <label class="form-label" for="form6Example7">Additional information</label>
-          <textarea class="form-control" id="form6Example7" rows="4"></textarea>
-        </div>
-
-        <!-- Checkbox -->
-        <div class="form-check d-flex justify-content-center mb-4">
-          <input class="form-check-input me-2" type="checkbox" value="" id="form6Example8" checked />
-          <label class="form-check-label" for="form6Example8"> Subscribe to newsletter </label>
-
-        </div>
-
-        <!-- Submit button -->
-        <center> <button type="submit" class="btn btn-primary btn-inline mb-4 mx-auto">Submit</button></center>
-      </form>
-    </div>
+  <div id="section-contact"></div>
+  <section class="section-form mt-3">
+    <div class="container">
+      <div class="contact-box">
+      <div class="left"></div>
+      <div class="right">
+      <!-- <h2 class="section-header">Contact Us</h2> -->
+      <input type="text" class="field" placeholder="Your Name">
+      <input type="text" class="field" placeholder="Your Email">
+      <input type="text" class="field" placeholder="Phone">
+      <textarea placeholder="Message" class="field"></textarea>
+      <button class="btn">Send</button>
+      </div>
+      </div>
+      </div>
   </section>
+  
   <!-- ============= contact us end ============-->
   <!-- ============= footer start ============-->
 
-  <section class="footer">
+  <section id="footer">
     <footer class="bg-dark text-center text-white">
-      <!-- Grid container -->
-      <div class="container p-4 pb-0">
-        <!-- Section: Social media -->
-        <section class="mb-4">
-          <!-- Facebook -->
-          <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998;" href="#!" role="button"><img
-              src="./img/facebook1.svg" alt="facebook" loading="lazy" width="30" height="30"></a></a>
+    <div class="sm">
+        <a href="https://github.com/vignesh2396/source-code.git" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/vigneshvky2396/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-telegram"></i></a>
+        <a href="mailto:vigneshvky2396@gmail.com@gmail.com"><i class="far fa-envelope"></i></a>
+    </div>
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2021 Copyright:
+      <a class="text-white" href="https://github.com/vignesh2396/source-code.git">Vignesh M</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+</section>
 
-          <!-- Twitter -->
-          <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee;" href="#!" role="button"><img
-              src="./img/twitter2.svg" alt="twitter" loading="lazy" width="30" height="30"></a></a>
-
-          <!-- Whatsapp -->
-          <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39;" href="#!" role="button"><img
-              src="./img/whatsapp.svg" alt="whatsapp" loading="lazy" width="30" height="30"></a></a>
-
-          <!-- Instagram -->
-          <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac;" href="#!" role="button"><img
-              src="./img/instagram1.svg" alt="instagram" loading="lazy" width="30" height="30"></a></a>
-        </section>
-        <!-- Section: Social media -->
-      </div>
-      <!-- Grid container -->
-
-      <!-- Copyright -->
-      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        © 2020 Copyright:
-        <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-      </div>
-      <!-- Copyright -->
-    </footer>
-  </section>
   <!-- ============= footer end ============-->
+
+    <!-- ============= script - fontawesome ============-->
+
+  <script src="https://kit.fontawesome.com/dd8c49730d.js" crossorigin="anonymous"></script>
 
 </body>
 
