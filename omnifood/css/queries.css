@@ -130,10 +130,14 @@ h2,.section-header{
     margin-left: 0;
     width: 100%;
 }
-    div {
-        padding      : 0;
-        margin-bottom: .5rem;
+    
+div {
+    padding      : 0;
+    margin-bottom: .5rem;
+}
+    
+.row{
+padding: 1rem;
     }
-
 
 }
