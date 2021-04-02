@@ -139,5 +139,9 @@ div {
 .row{
 padding: 1rem;
     }
+    
+.city-img, .city-icon{
+    margin: 0;
+}
 
 }
