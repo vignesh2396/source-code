@@ -68,12 +68,12 @@
 .left{
     display: none;
 }
-    .right{
-        display: block;
-    }
-    .contact-box{
-        display: block;
-    }
+.right{
+    display: block;
+}
+.contact-box{
+    display: block;
+}
 }
     
 /* for small mobile only */
@@ -122,6 +122,11 @@
         width       : 20px;
     }
 
+ .plan-box{
+    padding: 0;
+    margin-left: 0;
+    width: 100%;
+}
     div {
         padding      : 0;
         margin-bottom: .5rem;
