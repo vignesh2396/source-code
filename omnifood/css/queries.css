@@ -74,6 +74,9 @@
 .contact-box{
     display: block;
 }
+h2,.section-header{
+    margin-top: 1rem;
+}
 }
     
 /* for small mobile only */
