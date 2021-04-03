@@ -7,13 +7,13 @@
     width        : 90%;
     margin-left  : 5%;
     font-size    : large;
-    font-weight: bold;
+    font-weight  : bold;
     color        : white;
 }
 
 .plan-price,
 .plan-price-meal {
-    text-align: center;
+    text-align : center;
     font-weight: bold;
 }
 
@@ -33,12 +33,12 @@
 }
 
 .plan-box .btn {
-    padding         : 1rem 2rem;
-    font-size       : 1.2rem;
-    font-weight     : 600;
-    border-radius   : 50px;
+    padding      : 1rem 2rem;
+    font-size    : 1.2rem;
+    font-weight  : 600;
+    border-radius: 50px;
 }
 
-.plan-feature img{
+.plan-feature img {
     margin-right: 1rem;
 }
