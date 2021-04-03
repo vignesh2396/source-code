@@ -8,15 +8,13 @@ html {
 * {
     margin-right: 0;
     padding     : 0;
-    box-sizing  : border-box; 
+    box-sizing  : border-box;
 }
 
 body {
-    background-color   : aliceblue;
-    color              : black;
-    font-family        : 'Lato', 'Arial', 'sans-serif';
-    /* font-weight     : bold; */
-    /* font-size          : 1.4rem; */
+    background-color      : aliceblue;
+    color                 : black;
+    font-family           : 'Lato', 'Arial', 'sans-serif';
 }
 
 strong {
@@ -37,26 +35,26 @@ h1 {
 }
 
 h2 {
-    font-size : 4vw;
-    text-align: center;
-    position: relative;
-    padding: 0 0 10px;
-    margin-bottom: 15px;
+    font-size     : 4vw;
+    text-align    : center;
+    position      : relative;
+    padding       : 0 0 10px;
+    margin-bottom : 15px;
     text-transform: uppercase;
 }
 
 h2:after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    height: 4px;
-    width: 50%;
-    border-radius: 2px;
+    content         : '';
+    position        : absolute;
+    left            : 50%;
+    bottom          : 0;
+    transform       : translateX(-50%);
+    height          : 4px;
+    width           : 50%;
+    border-radius   : 2px;
     background-color: #2ecc71;
-    }
-    
+}
+
 h3 {
     text-transform: uppercase;
     border-bottom : 3px solid #8316F0;
@@ -89,7 +87,7 @@ h3 {
     font-weight: 600;
     font-style : italic;
     text-align : center;
-    margin-top: 4rem;
+    margin-top : 4rem;
 }
 
 .section-header:after {
@@ -100,15 +98,14 @@ h3 {
     height          : 3px;
 }
 
-hr{
+hr {
     background-color: whitesmoke;
 }
 
-ul li{
+ul li {
     list-style: none;
 }
 
-.plan-feature img{
-    padding-right : 1rem;
-} 
-
+.plan-feature img {
+    padding-right: 1rem;
+}

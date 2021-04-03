@@ -1,34 +1,34 @@
 /* ------------------------ */
 /* -------- feature --------*/
 /* ------------------------ */
-.section-feature{
-    background: #82e7473b;
-justify-content: center;
+.section-feature {
+    background     : #82e7473b;
+    justify-content: center;
 }
 
 .long-copy {
     margin-top : 1rem;
     color      : whitesmoke;
     text-shadow: 0 0 15px white;
-    text-align: center;
-    font-size: 1.5rem;
+    text-align : center;
+    font-size  : 1.5rem;
 }
 
 .f-img {
     margin-top: 1rem;
-    width: 5vw;
+    width     : 5vw;
 }
 
 .f-para {
-    text-align: justify;
-    padding   : .5rem;
-    font-weight: 600;
-    font-size: 120%;
+    text-align   : justify;
+    padding      : .5rem;
+    font-weight  : 600;
+    font-size    : 120%;
 }
 
- .f-box{
-    margin-bottom   : 2rem; 
+.f-box {
+    margin-bottom: 2rem;
     margin-left  : 3%;
-     margin-right : 2rem;
-     color: whitesmoke;
-} 
+    margin-right : 2rem;
+    color        : whitesmoke;
+}

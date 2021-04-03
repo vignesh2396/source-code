@@ -8,10 +8,6 @@
 
 /* for laptop and big screens */
 @media only screen and (min-width:1200px) {
-    /* img.app-screen {
-        width: 25%;
-
-    }  */
 
     .test {
         width: 30%;
@@ -61,24 +57,34 @@
         padding      : 0;
         margin-bottom: .5rem;
     }
+
+
 }
 
-/* custom size */
 @media only screen and (max-width:768px) {
-.left{
-    display: none;
+    .left {
+        display: none;
+    }
+
+    .right {
+        display: block;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+    .contact-box {
+        display: block;
+    }
+
+    h2,
+    .section-header {
+        margin-top: 1rem;
+    }
 }
-.right{
-    display: block;
-}
-.contact-box{
-    display: block;
-}
-h2,.section-header{
-    margin-top: 1rem;
-}
-}
-    
+
+
 /* for small mobile only */
 @media only screen and (max-width:481px) {
 
@@ -93,7 +99,6 @@ h2,.section-header{
 
     .f-para {
         font-size: 3.5vw;
-        /* width : 4rem; */
     }
 
     .long-copy {
@@ -106,11 +111,9 @@ h2,.section-header{
 
     a.btn.btn-warning,
     a.btn.btn-outline-warning {
-        /* width: 9vw; */
         padding: 10px;
     }
 
-    /*28 mar 2021 */
     .btn-app img {
         margin: 0;
     }
@@ -125,23 +128,23 @@ h2,.section-header{
         width       : 20px;
     }
 
- .plan-box{
-    padding: 0;
-    margin-left: 0;
-    width: 100%;
-}
-    
-div {
-    padding      : 0;
-    margin-bottom: .5rem;
-}
-    
-.row{
-padding: 1rem;
+    .plan-box {
+        padding    : 0;
+        margin-left: 0;
+        width      : 100%;
     }
-    
-.city-img, .city-icon{
-    margin: 0;
-}
 
+    div {
+        padding      : 0;
+        margin-bottom: .5rem;
+    }
+
+    .row {
+        padding: 1rem;
+    }
+
+    .city-img,
+    .city-icon {
+        margin: 0;
+    }
 }
