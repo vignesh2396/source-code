@@ -1,0 +1,241 @@
+/* ==================================== */
+/* =========== Global style ========= */
+/* ==================================== */
+:root {
+    --pink      : #ff4c68;
+    --light-pink: #ef8172;
+    --orange    : #ffb56b;
+    --white     : #fff;
+    --black     : #000;
+}
+
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x     : hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat";
+}
+
+h1 {
+    font-size  : 5rem;
+    line-height: 1.5;
+    font-weight: 900;
+    font-style : italic;
+    color: var(--white);
+}
+
+h2 {
+    font-size  : 3rem;
+    font-weight: bolder;
+    line-height: 1.5;
+}
+
+h3 {
+    font-size  : 2.5rem;
+    font-weight: bold;
+}
+
+p {
+    color    : 8f8f8f;
+    font-size: 1.5rem;
+}
+
+em {
+    font-size  : 1.5rem;
+    font-weight: bold;
+    position   : relative;
+    top        : -1rem;
+}
+
+/* ==================================== */
+/* ============== Header ============== */
+/* ==================================== */
+
+#title {
+    /* background: radial-gradient(circle at 50% 50%, #ff4c68, #ff5e63, #ff6e5f, #ff7e5d, #ff8c5e, #ff9a60, #ffa864, #ffb56b);    color     : honeydew; */
+   background-color: var(--pink);
+    width     : 100vw;
+    overflow  : hidden;
+}
+
+#logo {
+    width  : 30px;
+    display: left;
+}
+
+#iphone-img {
+    transform: rotate(25deg);
+    width    : 15%;
+    position : absolute;
+}
+
+.icons {
+    width: 35px;
+}
+
+/* ==================================== */
+/* ============= Features ============ */
+/* ==================================== */
+#features {
+    padding         : 2% 15%;
+    background-color: var(--white);
+    position        : relative;
+}
+
+.feature-icon {
+    width        : 6rem;
+    margin-bottom: 1rem;
+}
+
+.feature-box {
+    text-align: center;
+    padding   : 5%;
+}
+
+
+/* ==================================== */
+/* ====== Bootstrap custom style ====== */
+/* ==================================== */
+
+.container-fluid {
+    padding: 3% 15% 0;
+}
+
+.col-lg-6 {
+    text-align: center;
+    padding   : 0 2rem;
+}
+
+.download-btn {
+    margin: 5% 3% 5% 0;
+}
+
+/* Navigation bar */
+
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    font-size  : 1.5rem;
+    font-family: "Montserrat";
+}
+
+.navbar {
+    padding-bottom: 4.5rem;
+}
+
+.navbar-brand {
+    font-family: 'Ubuntu';
+    font-size  : 2.5rem;
+    font-weight: bold;
+}
+
+/* ==================================== */
+/* =========== Testimonials =========== */
+/* ==================================== */
+
+#testimonials {
+    padding   : 3% 15%;
+    text-align: center;
+    background: linear-gradient(150deg, #ff4c68, #ff4f67, #ff5765, #ff6262, #ff705f, #ff7e5d, #ff8c5e, #ff9960, #ffa463, #ffad67, #ffb36a, #ffb56b);
+    color     : #fff;
+}
+
+.testimonial-image {
+    border-radius: 100%;
+    width        : 15%;
+    margin       : 2rem 1rem 5rem;
+}
+
+.testimonial-text {
+    text-align: center;
+    padding   : 5% 10% 0;
+}
+
+
+/* ==================================== */
+/* ============== Press =============== */
+/* ==================================== */
+
+#press {
+    background    : linear-gradient(150deg, #ff705f, #ff775e, #ff7d5e, #ff845e, #ff8a5e, #ff915f, #ff9760, #ff9d61, #ffa363, #ffa965, #ffaf68, #ffb56b);
+    text-align    : center;
+    padding-bottom: 2%;
+}
+
+.press-image {
+    width : 15%;
+    margin: 20px 20px 50px;
+}
+
+/* ==================================== */
+/* ============== Pricing ============= */
+/* ==================================== */
+
+#pricing {
+    padding   : 3% 15%;
+    text-align: center;
+}
+
+.card-header {
+    background: linear-gradient(150deg, #ff4c68, #ff4f67, #ff5765, #ff6262, #ff705f, #ff7e5d, #ff8c5e, #ff9960, #ffa463, #ffad67, #ffb36a, #ffb56b);
+}
+
+.card-header:hover {
+    background: var(--pink);
+}
+
+.btn-danger:hover,
+.btn-outline-danger:hover {
+    background: var(--pink);
+}
+
+
+/* ==================================== */
+/* ============ media query =========== */
+/* ==================================== */
+
+@media (max-width:1028px) {
+
+    #title{
+       text-align: center;
+    }
+    
+
+    #iphone-img {
+        transform: rotate(0);
+        width    : 50%;
+        position : relative;
+        margin-bottom: 1rem;
+    }
+}
+
+/* ==================================== */
+/* ============== footer  ============= */
+/* ==================================== */
+
+
+
+#cta, #footer{
+    text-align: center;
+    background-color: var(--pink);
+    padding: 20px;
+    color: var(--white);
+}
+
+#cta{
+    padding: 3% 15%;
+}
+
+.footer-btn {
+    margin: 2% 1%;
+}

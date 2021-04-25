@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+/* **********************
+---- General style -----
+************************* */
+:root {
+    --black     : #000;
+    --lightblack: #111;
+    --dark      : #222;
+    --grey      : #333;
+    --lightgrey : #888;
+    --white     : #fff;
+    --yellow    : #f5af19;
+    --sandal    : #fdcf84;
+    --red       : #f12711;
+    --dark-green: #81a127;
+}
+
+* {
+    margin         : 0;
+    padding        : 0;
+    box-sizing     : border-box;
+    text-decoration: none;
+    font-family    : 'Nunito', sans-serif;
+    font-weight    : 400;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+section {
+    width     : 100%;
+    height    : 100vh;
+    background: var(--red);
+
+
+}
+
+/* section 1 start */
+
+.section-1 {
+    /* fallback for old browsers */
+    background     : -webkit-linear-gradient(to bottom, var(--yellow), var(--red));
+    /* Chrome 10-25, Safari 5.1-6 */
+    background     : linear-gradient(to bottom, var(--yellow), var(--red));
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display        : flex;
+    flex-direction : column;
+    align-items    : center;
+    justify-content: space-evenly;
+}
+
+.section-header {
+    color         : var(--white);
+    font-weight   : 900;
+    font-size     : 12rem;
+    letter-spacing: .5rem;
+    text-align    : center;
+    text-transform: uppercase;
+    text-shadow   : .3rem .3rem .3rem var(--black);
+}
+
+.section-1-icons i {
+    color      : var(--sandal);
+    font-size  : 30rem;
+    position   : absolute;
+    transform  : translate(-50%, -50%)scale(0);
+    text-shadow: .2rem .2rem .2rem var(--black);
+    transition : transform .2s;
+}
+
+.section-1-icons i.change {
+    transform : translate(-50%, -50%)scale(1);
+    transition: transform .2s .2s;
+}
+
+/* section 1 end */
+
+/* section 2 start */
+.section-2 {
+    /* width: 100%;
+    height: 100vh; */
+    background     : var(--dark);
+    display        : flex;
+    flex-direction : column;
+    justify-content: space-between;
+    padding        : 10rem 0;
+}
+
+.card-container {
+    display        : flex;
+    justify-content: space-evenly;
+}
+
+.card {
+    width                : 30rem;
+    /* background        : var(--sandal); */
+    background           : var(--red);
+    /* fallback for old browsers */
+    background           : -webkit-linear-gradient(to bottom, var(--yellow), var(--red));
+    /* Chrome 10-25, Safari 5.1-6 */
+    background           : linear-gradient(to bottom, var(--yellow), var(--red));
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    display        : flex;
+    flex-direction : column;
+    align-items    : center;
+    padding        : 4rem;
+    box-shadow     : 1rem 1rem 1rem var(--black);
+    justify-content: space-between;
+    position       : relative;
+    transform      : rotateY(20deg) scale(1);
+    transition     : transform .5s box-shadow .5s;
+}
+
+.card:hover {
+    transform : rotateY(20deg) scale(1.05);
+    box-shadow: 2rem 2rem 2rem var(--black);
+}
+
+.card::before {
+    content         : "";
+    width           : 1rem;
+    height          : 100%;
+    background-color: var(--dark-green);
+    position        : absolute;
+    top             : 0;
+    left            : -1rem;
+    transform       : skewY(45deg);
+    transform-origin: right;
+    box-shadow      : -.1rem -.1rem -.1rem var(--black);
+}
+
+.card::after {
+    content         : "";
+    width           : 100%;
+    height          : 1rem;
+    background-color: var(--dark-green);
+    position        : absolute;
+    top             : -1rem;
+    left            : 0;
+    transform       : skewx(45deg);
+    transform-origin: bottom;
+    box-shadow      : -.1rem -.1rem -.1rem var(--black);
+}
+
+.card-img {
+    width: 100%;
+}
+
+.card-name {
+    font-size     : 3rem;
+    font-weight   : 900;
+    letter-spacing: .5rem;
+    color         : var(--lightblack);
+    margin        : 2rem 0;
+    text-transform: uppercase;
+    text-shadow   : .15rem .15rem .15rem var(--black);
+}
+
+.card-btn {
+    width         : 70%;
+    border-radius : 5rem;
+    background    : var(--lightblack);
+    color         : var(--lightgrey);
+    cursor        : pointer;
+    font-size     : 1.5rem;
+    font-weight   : 800;
+    text-transform: capitalize;
+    letter-spacing: .3rem;
+    padding       : 1rem 0;
+    box-shadow    : -.2rem -.2rem .2rem var(--black);
+}
+
+/* section 2 end */
