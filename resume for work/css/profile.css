@@ -2,27 +2,27 @@
 
 /*-------------------------------------------------------*/
 #profile {
-	background:#cf455c;
-	background-image: url(../images/header-shadow.png);
+	background         : #cf455c;
+	background-image   : url(../images/header-shadow.png);
 	background-position: center bottom;
-	background-repeat: repeat-x;
-	overflow: hidden;
+	background-repeat  : repeat-x;
+	overflow           : hidden;
 }
 
 /* About */
 .about {
-	float: left;
-	margin-top: 30px;
-	width: 490px;
+	float      : left;
+	margin-top : 30px;
+	width      : 490px;
 	margin-left: 20px;
 }
 
 .about .photo-inner {
-	float: left;
+	float     : left;
 	background: url(../images/photo-inner.png) no-repeat;
-	width: 192px;
-	height: 212px;
-	padding: 12px 0 0 20px;
+	width     : 192px;
+	height    : 212px;
+	padding   : 12px 0 0 20px;
 }
 
 .about .photo-inner img {
@@ -31,57 +31,57 @@
 
 .about h1 {
 	font-weight: 900;
-	color: #FFF;
+	color      : #FFF;
 	line-height: 34px;
-	margin-top: 8px;
+	margin-top : 8px;
 }
 
 .about h3 {
-	margin-top: 5px;
-	font-size: 18px;
-	color: #FFF;
+	margin-top : 5px;
+	font-size  : 18px;
+	color      : #FFF;
 	line-height: 18px;
 }
 
 .about p {
-	font-size: 14px;
-	margin-top: 15px;
-	color:#fff;
+	font-size  : 14px;
+	margin-top : 15px;
+	color      : #fff;
 	font-weight: 400;
 	line-height: 20px;
 }
 
 /* Personal info */
 .personal-info {
-	float: left;
-	margin-top: 30px;
-	width: 310px;
-	min-height: 230px;
+	float      : left;
+	margin-top : 30px;
+	width      : 310px;
+	min-height : 230px;
 	margin-left: 10px;
-	background: url(../images/personal-info-sep.png) no-repeat left top;
-	padding: 20px 0 0 20px;
+	background : url(../images/personal-info-sep.png) no-repeat left top;
+	padding    : 20px 0 0 20px;
 }
 
 .personal-info li {
-	font-size: 14px;
+	font-size    : 14px;
 	margin-bottom: 10px;
-	overflow: hidden;
+	overflow     : hidden;
 }
 
 .personal-info li label {
-	color:#fff;
-	float: left;
-	padding: 4px 7px;
-	font-weight: 600;
-	border-radius: 3px;
-	-moz-border-radius: 3px;
+	color                : #fff;
+	float                : left;
+	padding              : 4px 7px;
+	font-weight          : 600;
+	border-radius        : 3px;
+	-moz-border-radius   : 3px;
 	-webkit-border-radius: 3px;
 }
 
 .personal-info li span {
-	float: right;
-	width: 220px;
+	float      : right;
+	width      : 220px;
 	padding-top: 4px;
 	font-weight: 300;
-	color:#fff;
+	color      : #fff;
 }
