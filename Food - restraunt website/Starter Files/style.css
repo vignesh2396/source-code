@@ -79,8 +79,6 @@ section {
 
 /* section 2 start */
 .section-2 {
-    /* width: 100%;
-    height: 100vh; */
     background     : var(--dark);
     display        : flex;
     flex-direction : column;
@@ -94,14 +92,12 @@ section {
 }
 
 .card {
-    width                : 30rem;
-    /* background        : var(--sandal); */
-    background           : var(--red);
+    width     : 30rem;
+    background: var(--red);
     /* fallback for old browsers */
-    background           : -webkit-linear-gradient(to bottom, var(--yellow), var(--red));
+    background: -webkit-linear-gradient(to bottom, var(--yellow), var(--red));
     /* Chrome 10-25, Safari 5.1-6 */
-    background           : linear-gradient(to bottom, var(--yellow), var(--red));
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to bottom, var(--yellow), var(--red));
 
     display        : flex;
     flex-direction : column;
@@ -163,7 +159,7 @@ section {
     width         : 70%;
     border-radius : 5rem;
     background    : var(--lightblack);
-    color         : var(--lightgrey);
+    color         : var(--white);
     cursor        : pointer;
     font-size     : 1.5rem;
     font-weight   : 800;
@@ -174,3 +170,109 @@ section {
 }
 
 /* section 2 end */
+/* section 3 */
+.section-3 {
+    background: linear-gradient(to bottom, var(--yellow), var(--red));
+    padding   : 5rem 0;
+}
+
+.gallery {
+    display        : flex;
+    flex-wrap      : wrap;
+    align-items    : center;
+    justify-content: space-evenly;
+    margin-top     : 10rem;
+    
+}
+
+.gallery-link {
+    position: relative;
+    margin  : 4rem 1rem;
+    box-shadow:
+    inset 0 -3em 3em rgba(0,0,0,0.1),
+          0 0  0 2px rgb(255,255,255),
+          0.3em 0.3em 1em rgba(0,0,0,0.3);
+        }
+
+.gallery-link::before,
+.gallery-link::after {
+    content         : "";
+    position        : absolute;
+    background-color: var(--white);
+}
+
+.gallery-link::before {
+    width : .2rem;
+    height: 0;
+    top   : 2rem;
+    left  : 80%;
+    transition: height .5s;
+}
+
+.gallery-link:hover::before{
+    height: 80%;
+    z-index: 1;
+}
+
+.gallery-link::after {
+    width : 0;
+    height: .2rem;
+    top   : 25%;
+    left  : 2rem;
+    transition: width .5s;
+}
+
+.gallery-link:hover::after{
+    width : 90%;
+}
+
+.food-img {
+    width     : 24vw;
+    height    : 15vw;
+    object-fit: cover;
+}
+
+.gallery-link:hover .food-img{
+    filter: blur(5px);
+    transform: scale(1.1);
+    transition: transform .5s;
+}
+
+.food-title,
+.food-description {
+    position      : absolute;
+    left          : 3rem;
+    color         : var(--white);
+    font-weight   : 900;
+    letter-spacing: .1rem;
+    font-style    : italic;
+}
+
+.food-title {
+    top           : 3rem;
+    font-size     : 2vw;
+    text-transform: uppercase;
+    width: 0;
+    overflow: hidden;
+}
+
+.gallery-link:hover .food-title{
+width: 100%;
+transition: width 1.5s .5s;
+}
+
+.food-description {
+    top      : 6vw;
+    font-size: 1vw;
+    width    : 75%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s;
+}
+
+.gallery-link:hover .food-description{
+opacity: 1;
+visibility: visible;
+transition: opacity 1s 1s;
+}
+/* section 3 end */
