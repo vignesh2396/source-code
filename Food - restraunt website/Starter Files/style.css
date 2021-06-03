@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200;1,300;1,400;1,600;1,700;1,800&display=swap");
 
 /* **********************
 ---- General style -----
@@ -21,7 +21,7 @@
     padding        : 0;
     box-sizing     : border-box;
     text-decoration: none;
-    font-family    : 'Nunito', sans-serif;
+    font-family    : "Nunito", sans-serif;
     font-weight    : 400;
 }
 
@@ -33,8 +33,6 @@ section {
     width     : 100%;
     height    : 100vh;
     background: var(--red);
-
-
 }
 
 /* section 1 start */
@@ -55,32 +53,30 @@ section {
     color         : var(--white);
     font-weight   : 900;
     font-size     : 12rem;
-    letter-spacing: .5rem;
+    letter-spacing: 0.5rem;
     text-align    : center;
     text-transform: uppercase;
-    text-shadow   : .3rem .3rem .3rem var(--black);
+    text-shadow   : 0.3rem 0.3rem 0.3rem var(--black);
 }
 
 .section-1-icons i {
     color      : var(--sandal);
     font-size  : 30rem;
     position   : absolute;
-    transform  : translate(-50%, -50%)scale(0);
-    text-shadow: .2rem .2rem .2rem var(--black);
-    transition : transform .2s;
+    transform  : translate(-50%, -50%) scale(0);
+    text-shadow: 0.2rem 0.2rem 0.2rem var(--black);
+    transition : transform 0.2s;
 }
 
 .section-1-icons i.change {
-    transform : translate(-50%, -50%)scale(1);
-    transition: transform .2s .2s;
+    transform : translate(-50%, -50%) scale(1);
+    transition: transform 0.2s 0.2s;
 }
 
 /* section 1 end */
 
 /* section 2 start */
 .section-2 {
-    /* width: 100%;
-    height: 100vh; */
     background     : var(--dark);
     display        : flex;
     flex-direction : column;
@@ -94,14 +90,12 @@ section {
 }
 
 .card {
-    width                : 30rem;
-    /* background        : var(--sandal); */
-    background           : var(--red);
+    width     : 30rem;
+    background: var(--red);
     /* fallback for old browsers */
-    background           : -webkit-linear-gradient(to bottom, var(--yellow), var(--red));
+    background: -webkit-linear-gradient(to bottom, var(--yellow), var(--red));
     /* Chrome 10-25, Safari 5.1-6 */
-    background           : linear-gradient(to bottom, var(--yellow), var(--red));
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to bottom, var(--yellow), var(--red));
 
     display        : flex;
     flex-direction : column;
@@ -111,7 +105,7 @@ section {
     justify-content: space-between;
     position       : relative;
     transform      : rotateY(20deg) scale(1);
-    transition     : transform .5s box-shadow .5s;
+    transition     : transform 0.5s box-shadow 0.5s;
 }
 
 .card:hover {
@@ -129,7 +123,7 @@ section {
     left            : -1rem;
     transform       : skewY(45deg);
     transform-origin: right;
-    box-shadow      : -.1rem -.1rem -.1rem var(--black);
+    box-shadow      : -0.1rem -0.1rem -0.1rem var(--black);
 }
 
 .card::after {
@@ -142,7 +136,7 @@ section {
     left            : 0;
     transform       : skewx(45deg);
     transform-origin: bottom;
-    box-shadow      : -.1rem -.1rem -.1rem var(--black);
+    box-shadow      : -0.1rem -0.1rem -0.1rem var(--black);
 }
 
 .card-img {
@@ -152,25 +146,178 @@ section {
 .card-name {
     font-size     : 3rem;
     font-weight   : 900;
-    letter-spacing: .5rem;
+    letter-spacing: 0.5rem;
     color         : var(--lightblack);
     margin        : 2rem 0;
     text-transform: uppercase;
-    text-shadow   : .15rem .15rem .15rem var(--black);
+    text-shadow   : 0.15rem 0.15rem 0.15rem var(--black);
 }
 
 .card-btn {
     width         : 70%;
     border-radius : 5rem;
     background    : var(--lightblack);
-    color         : var(--lightgrey);
+    color         : var(--white);
     cursor        : pointer;
     font-size     : 1.5rem;
     font-weight   : 800;
     text-transform: capitalize;
-    letter-spacing: .3rem;
+    letter-spacing: 0.3rem;
     padding       : 1rem 0;
-    box-shadow    : -.2rem -.2rem .2rem var(--black);
+    box-shadow    : -0.2rem -0.2rem 0.2rem var(--black);
 }
 
 /* section 2 end */
+/* section 3 */
+.section-3 {
+    background: linear-gradient(to bottom, var(--yellow), var(--red));
+    padding   : 5rem 0;
+}
+
+.gallery {
+    display        : flex;
+    flex-wrap      : wrap;
+    align-items    : center;
+    justify-content: space-evenly;
+    margin-top     : 10rem;
+}
+
+.gallery-link {
+    position: relative;
+    margin  : 4rem 1rem;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+        0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.gallery-link::before,
+.gallery-link::after {
+    content         : "";
+    position        : absolute;
+    background-color: var(--white);
+}
+
+.gallery-link::before {
+    width     : 0.2rem;
+    height    : 0;
+    top       : 2rem;
+    left      : 80%;
+    transition: height 0.5s;
+}
+
+.gallery-link:hover::before {
+    height : 80%;
+    z-index: 1;
+}
+
+.gallery-link::after {
+    width     : 0;
+    height    : 0.2rem;
+    top       : 25%;
+    left      : 2rem;
+    transition: width 0.5s;
+}
+
+.gallery-link:hover::after {
+    width: 90%;
+}
+
+.food-img {
+    width     : 24vw;
+    height    : 15vw;
+    object-fit: cover;
+}
+
+.gallery-link:hover .food-img {
+    filter    : blur(5px);
+    transform : scale(1.1);
+    transition: transform 0.5s;
+}
+
+.food-title,
+.food-description {
+    position      : absolute;
+    left          : 3rem;
+    color         : var(--white);
+    font-weight   : 900;
+    letter-spacing: 0.1rem;
+    font-style    : italic;
+}
+
+.food-title {
+    top           : 3rem;
+    font-size     : 2vw;
+    text-transform: uppercase;
+    width         : 0;
+    overflow      : hidden;
+}
+
+.gallery-link:hover .food-title {
+    width     : 100%;
+    transition: width 1.5s 0.5s;
+}
+
+.food-description {
+    top       : 6vw;
+    font-size : 1vw;
+    width     : 75%;
+    opacity   : 0;
+    visibility: hidden;
+    transition: opacity 0.3s;
+}
+
+.gallery-link:hover .food-description {
+    opacity   : 1;
+    visibility: visible;
+    transition: opacity 1s 1s;
+}
+
+/* section 3 end */
+
+/* section 4 start */
+.section-4 {
+    background     : #444;
+    color          : var(--white);
+    display        : flex;
+    flex-direction: column;
+    align-items    : center;
+    justify-content: center;
+    width          : 100%;
+    height         : 50vh;
+    padding        : 3rem 0;
+    position       : relative;
+}
+
+.signup{}
+.signup-text{
+    font-size: 4rem;
+}
+.signup-form{}
+
+.signup-input{
+    width: 30rem;
+    height: 4rem;
+    padding: 1rem;
+    margin-top: 5rem;
+    border: 0.2rem solid var(--sandal);
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+}
+.signup-form-btn{
+    position: relative;
+    left: -3.5rem;
+    background: var(--lightgrey);
+    color: var(--sandal);
+    padding: 1rem;
+    border: none;
+    font-size: 1.5rem;
+}
+
+.copyright {
+    position: absolute;
+    bottom  : 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+/* section 4 end */
